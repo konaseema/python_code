@@ -30,23 +30,4 @@ def move(p, U):
         q.append(s)
     return q
 
-def move(p, motions, p_move)
-    
-    q = [[1 for row in range(len(colors[0]))] for col in range(len(colors))]
-        for i in range(len(colors[0])):
-            for j in range(len(colors)):
-                s = pMove* p[(i-motions[i][1]) % len(colors[0])][(j-motions[i][0]) % len(colors[0])]
-       
-        return q
-
-
 print move(p, 1)
-
-#
-# The video shows sensor_wrong and p_stay defined globally and referenced from sense() and move() helper functions. 
-# This approach will not actually work when submitting the assignment. 
-# You must pass in all required state into your sense() and move() functions from inside your 
-# localize() routine: def sense(p, colors, measurements, sensor_wrong): ... \
-# def move(p, motion, p_stay): ... 
-# def localize(...): ... p = move(p, motion, p_stay) p = sense(p, colors, measurement, sensor_wrong) 
-# [You should NOT modify the function signature of localize()]

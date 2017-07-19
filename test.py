@@ -2,6 +2,8 @@
 #probabilities of overshooting or undershooting 
 #the intended destination.
 
+#First part of programming assignment
+
 p=[0, 1, 0, 0, 0]
 world=['green', 'red', 'red', 'green', 'green']
 measurements = ['red', 'green']

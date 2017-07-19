@@ -57,7 +57,7 @@ def localize(colors,measurements,motions,sensor_right,p_move):
     # >>> Insert your code here <<<
 
     def move(p, motion, p_move):
-        q = [[1 for row in range(len(colors[0]))] for col in range(len(colors))]
+        q = [[1.0 for row in range(len(colors[0]))] for col in range(len(colors))]
         Y = motion[0]
         X = motion[1]
 
@@ -69,7 +69,7 @@ def localize(colors,measurements,motions,sensor_right,p_move):
         return q
 
     def sense(p, colors, measurement, sensor_right):
-        q = [[1 for row in range(len(colors[0]))] for col in range(len(colors))]
+        q = [[1.0 for row in range(len(colors[0]))] for col in range(len(colors))]
         for i in range(len(colors)):
             for j in range(len(colors[0])):
                 hit = (measurement == colors[i][j])
